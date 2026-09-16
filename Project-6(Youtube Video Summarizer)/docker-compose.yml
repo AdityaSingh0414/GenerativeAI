@@ -1,0 +1,13 @@
+# docker-compose.yml
+services:
+  summarizer:
+    build: .
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      - cache-data:/app/cache
+
+volumes:
+  cache-data:

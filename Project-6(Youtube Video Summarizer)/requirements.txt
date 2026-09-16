@@ -1,0 +1,14 @@
+youtube-transcript-api==0.6.2
+langchain==0.2.14
+langchain-openai==0.1.22
+langchain-community==0.2.12
+openai==1.42.0
+streamlit==1.37.1
+tiktoken==0.7.0
+python-dotenv==1.0.1
+
+# Intermediate-level additions
+pydantic-settings==2.4.0    # typed, env-driven config (config.py)
+tenacity==8.5.0              # retry/backoff for transient API errors
+faiss-cpu==1.8.0.post1        # vector store for RAG Q&A (src/qa_engine.py)
+reportlab==4.2.2               # PDF export (src/export.py)
